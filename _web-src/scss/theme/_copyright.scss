@@ -2,6 +2,22 @@
 
 .container-copyright {
   padding: $spacer 0 $spacer 0;
-  color: darken($theme-color-main, 50%);
+  color: $theme-color-main-contrast;
   background: $theme-color-main;
+
+  a, a:hover, a:visited {
+    position: relative;
+    border-bottom: 1px solid $theme-color-main-contrast;
+    color: $theme-color-main-contrast;
+    text-decoration: none;
+  }
+  a::after {
+    content: ' ';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background-color: $theme-color-main-contrast;
+    left: 0;
+    bottom: 0;
+  }
 }
