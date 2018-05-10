@@ -45,10 +45,10 @@
 // @import "bootstrap/pager";
 // @import "bootstrap/labels";
 // @import "bootstrap/jumbotron";
-// @import "bootstrap/alert";
+@import "bootstrap/alert";
 // @import "bootstrap/progress";
 // @import "bootstrap/media";
-// @import "bootstrap/list-group";
+@import "bootstrap/list-group";
 // @import "bootstrap/responsive-embed";
 // @import "bootstrap/close";
 
@@ -74,6 +74,7 @@
 @import "theme/top";
 @import "theme/about";
 @import "theme/instagram";
+@import "theme/pricing";
 @import "theme/contacts";
 @import "theme/copyright";
 

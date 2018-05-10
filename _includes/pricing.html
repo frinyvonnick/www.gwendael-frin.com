@@ -1,0 +1,43 @@
+<section class="container container-pricing">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Tarifs</h1>
+        </div>
+        <div class="col-sm-12 col-md-12">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="hommes-tab" data-toggle="tab" href="#hommes" role="tab" aria-controls="hommes" aria-selected="true">Hommes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="femmes-tab" data-toggle="tab" href="#femmes" role="tab" aria-controls="femmes" aria-selected="false">Femmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="enfants-tab" data-toggle="tab" href="#enfants" role="tab" aria-controls="enfants" aria-selected="false">Enfants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="evenementiel-tab" data-toggle="tab" href="#evenementiel" role="tab" aria-controls="evenementiel" aria-selected="false">Évènementiel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="intermittant-tab" data-toggle="tab" href="#intermittant" role="tab" aria-controls="intermittant" aria-selected="false">Intermittent</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade in active" id="hommes" role="tabpanel" aria-labelledby="hommes-tab">
+                {% include hommes.html %}
+            </div>
+            <div class="tab-pane fade" id="femmes" role="tabpanel" aria-labelledby="femmes-tab">
+                {% include femmes.html %}
+            </div>
+            <div class="tab-pane fade" id="enfants" role="tabpanel" aria-labelledby="enfants-tab">
+                {% include enfants.html %}
+            </div>
+            <div class="tab-pane fade" id="evenementiel" role="tabpanel" aria-labelledby="evenementiel-tab">
+                {% include evenementiel.html %}
+            </div>
+            <div class="tab-pane fade" id="intermittant" role="tabpanel" aria-labelledby="intermittant-tab">
+                {% include intermittant.html %}
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
